@@ -1,0 +1,80 @@
+/* h1 {
+    font-weight: 800; font-size: 5rem;
+    background:linear-gradient(to right, aqua, lime, pink, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    animation: text_bg 10s linear infinite;
+}
+@keyframes text_bg {
+    0% {background-position-x: 100%;}
+    100% {background-position-x: 400%;}
+} */
+
+header {}
+header .menu_wrap {}
+header .menu_wrap .gnb {
+	display: flex; flex-flow: row nowrap;
+	justify-content: center;
+	padding: 30px; 
+}
+header .menu_wrap .gnb li {}
+header .menu_wrap .gnb li a {
+	font-family: 'Dosis', sans-serif;
+	color: #fff; font-weight: 600;
+	font-size: 1.5rem; letter-spacing: 1.5px;
+	padding: 10px;
+	margin-right: 10px;
+}
+header .menu_wrap .gnb li a:hover {
+	border-bottom: 2px solid #fff;
+}
+main {position: relative;}
+main .intro {
+	display: flex; flex-flow: column nowrap;
+}
+main p {
+	color: #fff; 
+}
+main .one {
+	font-size: 2rem;
+	position: absolute; left: 50%; top: 220px;
+	transform: translateX(-50%);
+}
+main .two {
+	font-size: 3rem;
+	font-family: 'Dosis', sans-serif;
+	position: absolute; left: 50%; top: 330px;
+	transform: translateX(-50%);
+}
+main .three {
+	font-size: 2rem;
+	position: absolute; left: 50%; top: 430px;
+	transform: translateX(-50%);
+}
+main .intro p em {
+	font-size: 3rem;
+	color: #fff; font-weight: 600;
+}
+main .moon {
+	width: 1350px;
+	position: absolute; left: 50%; bottom: 100;
+	transform: translateX(-50%);
+}
+main .moon img {
+	width: 100%;
+	animation: moon 180s linear infinite;
+}
+footer .copyright {}
+footer .copyright p {
+	font-family: 'Dosis', sans-serif;
+	color: #fff; font-size: 0.875rem;
+	padding: 0 50px;
+	letter-spacing: 1.5px;
+	position: relative; top: 850px;
+}
+
+@keyframes moon {
+	0% {transform: rotate(0);}
+	100% {transform: rotate(360deg);}
+}
