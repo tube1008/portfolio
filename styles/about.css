@@ -1,0 +1,119 @@
+header {}
+header .menu_wrap {}
+header .menu_wrap .gnb {
+	display: flex; flex-flow: row nowrap;
+	justify-content: center;
+	padding: 30px; 
+}
+header .menu_wrap .gnb li {}
+header .menu_wrap .gnb li a {
+	font-family: 'Dosis', sans-serif;
+	color: #fff; font-weight: 600;
+	font-size: 1.5rem; letter-spacing: 1.5px;
+	padding: 10px;
+	margin-right: 10px;
+}
+header .menu_wrap .gnb li a:nth-child(4) {margin-right: 0;}
+header .menu_wrap .gnb li a:hover {
+	border-bottom: 2px solid #fff;
+}
+main {
+	margin-top: 30px;
+	background: cadetblue;
+}
+main .wrap.title {
+	display: flex; flex-flow: row nowrap;
+}
+main .wrap .title h1 {
+	color: #fff;
+	font-size: 2.5rem;
+	margin-bottom: 30px;
+}
+main .wrap .title span {}
+main .wrap .title span::after {
+	content: ''; display: inline-block;
+    width: 200px ; height: 5px;
+    background: #fff;
+	margin-left: 10px;
+	position: relative; top: 16px;
+}
+main .wrap {
+	display: flex; flex-flow: row nowrap;
+	position: relative; left: 50%;
+	transform: translateX(-50%);
+}
+main .wrap .profile {
+	display: flex; flex-flow: column nowrap;
+}
+main .wrap .profile p {
+	color: #fff;
+	padding: 15px 20px;
+}
+main .wrap .right {
+	display: flex; flex-flow: column nowrap;
+}
+main .wrap .right span {
+	font-family: dosis sans-serif; font-weight: 300;
+	color: #fff;
+	padding-left: 20px;
+	padding: 15px 20px;
+}
+main .wrap .photo {}
+main .wrap .photo img {
+	width: 200px;
+	border-radius: 50%;
+	margin: 0 50px;
+}
+main .wrap .education {}
+main .wrap .education h2 {
+	color: #fff;
+	padding: 15px 0;
+}
+main .wrap .education p {
+	font-family: dosis sans-serif;
+	color: #fff;
+	padding: 15px 0;
+}
+main .wrap .education p:nth-child(4) {
+	margin-top: 20px;
+}
+main .wrap .certificare {
+	margin-left: 30px;
+}
+main .wrap .certificare h2 {
+	color: #fff;
+	padding: 15px 0;
+}
+main .wrap .certificare p {
+	font-family: dosis sans-serif;
+	color: #fff;
+	padding: 15px 0;
+}
+main .wrap .certificare p:nth-child(4) {margin-top: 20px;}
+main .wrap .container {}
+main .wrap .container .strength h1 {
+	color: #fff;
+	font-size: 2rem;
+}
+main .wrap .container .strength span {}
+main .wrap .container .strength span::after {
+	content: ''; display: inline-block;
+    width: 200px ; height: 5px;
+    background: #fff;
+	margin-left: 10px;
+	position: relative; top: 16px;
+}
+main .wrap .container a {}
+main .wrap .container a img {
+	width: 100px;
+
+}
+main .wrap .container a p {}
+footer .copyright {}
+footer .copyright p {
+	font-family: 'Dosis', sans-serif;
+	color: #fff; font-size: 0.875rem;
+	padding: 0 50px;
+	letter-spacing: 1.5px;
+	position: relative; top: 850px;
+}

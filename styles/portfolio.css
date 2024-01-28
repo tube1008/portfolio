@@ -32,22 +32,46 @@ header .menu_wrap .gnb li a:hover {
 main {position: relative;}
 main .intro {
 	display: flex; flex-flow: column nowrap;
+	animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
 }
 main p {
 	color: #fff; 
 }
-main .one {
+main .intro .one{
+	width: 52ch;
+	animation: typing 2.5s steps(22), blink .6s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-family: monospace;
+	color: #fff;
 	font-size: 2rem;
 	position: absolute; left: 50%; top: 220px;
 	transform: translateX(-50%);
 }
 main .two {
+	width: 17.5ch;
+	animation: typing 2.5s steps(22), blink .6s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-family: monospace;
+	color: #fff;
 	font-size: 3rem;
 	font-family: 'Dosis', sans-serif;
 	position: absolute; left: 50%; top: 330px;
 	transform: translateX(-50%);
 }
 main .three {
+	width: 16.5ch;
+	animation: typing 2.5s steps(22), blink .6s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-family: monospace;
+	color: #fff;
 	font-size: 2rem;
 	position: absolute; left: 50%; top: 430px;
 	transform: translateX(-50%);
@@ -77,4 +101,16 @@ footer .copyright p {
 @keyframes moon {
 	0% {transform: rotate(0);}
 	100% {transform: rotate(360deg);}
+}
+
+@keyframes typing {
+	from {
+		width: 0
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent
+	}
 }
