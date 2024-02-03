@@ -30,24 +30,24 @@ header .link {
     position:fixed; right:50px; top:50%;
     display:flex; flex-flow:column wrap; align-items: flex-end;
 }
-header .link a {
+header .link #btn {
     background:#fff; color:#000; overflow:hidden;
     border-radius:50%; width:30px; height:30px;
-    position:relative; margin-bottom:15px; transition:all 0.5s;
+    margin-bottom:15px; transition:all 0.5s;
 }
-header .link a:hover {
+header .link #btn:hover {
     background: #fff;
-    width:90px; border-radius:10px;
+    width:100px; border-radius:10px;
 }
-header .link a::after {
+header .link #btn::after {
     position:absolute; right:20px;
-    font-size:0.85rem; display:block; line-height:30px;
+    font-size:0.85rem; display:block;
     white-space:nowrap;
 }
-header .link a:nth-child(1):hover:after {content:'About Me'}
-header .link a:nth-child(2):hover:after {content:'Skills'}
-header .link a:nth-child(3):hover:after {content:'Project'}
-header .link a:nth-child(4):hover:after {content:'Contact'}
+header .link #btn:nth-child(1):hover:after {content:'About Me'}
+header .link #btn:nth-child(2):hover:after {content:'Skills'}
+header .link #btn:nth-child(3):hover:after {content:'Project'}
+header .link #btn:nth-child(4):hover:after {content:'Contact'}
 /* main -------------------------------------------------------------- */
 main {}
 main .wrap {
@@ -62,11 +62,12 @@ main .wrap .title {
 main .wrap .title h1 {
 	color: #fff;
 	font-size: 2rem;
+	padding-left: 180px;
 }
 main .wrap .title span {}
 main .wrap .title span::after {
 	content: ''; display: inline-block;
-    width: 200px ; height: 3px;
+    width: 1040px ; height: 3px;
     background: #fff;
 	margin-left: 10px;
 	position: relative; top: 16px;
@@ -142,6 +143,9 @@ main .wrap .experience .certificare p {
 	color: #fff;
 	padding: 15px 0;
 }
+main .wrap .experience .certificare p:nth-child(4) {
+	margin-top: 20px;
+}
 /* skills -------------------------------------------------------------- */
 main .container {}
 main .container .title {
@@ -152,11 +156,12 @@ main .container .title {
 main .container .title h1 {
 	color: #fff;
 	font-size: 2rem;
+	padding-left: 180px;
 }
 main .container .title span {}
 main .container .title span::after {
 	content: ''; display: inline-block;
-    width: 200px ; height: 3px;
+    width: 1110px ; height: 3px;
     background: #fff;
 	margin-left: 10px;
 	position: relative; top: 16px;
@@ -196,111 +201,121 @@ main .project .title {
 main .project .title h1 {
 	color: #fff;
 	font-size: 2rem;
+	margin-left: 180px;
 }
 main .project .title span {}
 main .project .title span::before {
 	content: ''; display: inline-block;
-    width: 1000px ; height: 3px;
+    width: 1080px ; height: 3px;
     background: #fff;
 	margin-left: 10px;
 	position: relative; top: 16px;
 }
 main .project .my_project {
-	display: grid; 
-	text-align: center;
-    grid-template: 'project_01 project_02'
-                    'project_03 project_04';
+	display: flex; flex-flow: column nowrap;
 	border: 3px solid #fff;
 	border-radius: 25px;
 	padding: 25px; margin: 0 350px 50px 350px;
 }
-main .project .my_project .project_01 {
+main .project .my_project .top {
+	display: flex; flex-flow: row nowrap;
+	justify-content: center;
+	text-align: center;
+}
+main .project .my_project .top .project_01 {
 	width: 250px;
 	border: 1px solid #fff;
 	border-radius: 25px;
 	background: #dfdfdf;
 	padding: 10px 0;
+	margin: 0 50px 15px 0;
 }
-main .project .my_project .project_01 img {
+main .project .my_project .top .project_01 img {
 	width: 200px;
 }
-main .project .my_project .project_01 .detail {
+main .project .my_project .top .project_01 .detail {
 	padding: 15px;
 }
-main .project .my_project .project_01 .detail h2 {
+main .project .my_project .top .project_01 .detail h2 {
 	color: #000;
 	font-size: 2rem;
 	padding-bottom: 10px;
 }
-main .project .my_project .project_01 .detail p {
+main .project .my_project .top .project_01 .detail p {
 	color: #000;
 	font-size: 1.5rem;
 }
-main .project .my_project .project_02 {
+main .project .my_project .top .project_02 {
 	width: 250px;
 	border: 1px solid #fff;
 	border-radius: 25px;
 	background: #dfdfdf;
 	padding: 10px 0;
+	margin: 0 0 15px 50px ;
 }
-main .project .my_project .project_02 img {
+main .project .my_project .top .project_02 img {
 	width: 200px;
 }
-main .project .my_project .project_02 .detail {
+main .project .my_project .top .project_02 .detail {
 	padding: 15px;
 }
-main .project .my_project .project_02 .detail h2 {
+main .project .my_project .top .project_02 .detail h2 {
 	color: #000;
 	font-size: 2rem;
 	padding-bottom: 10px;
 }
-main .project .my_project .project_02 .detail p {
+main .project .my_project .top .project_02 .detail p {
 	color: #000;
 	font-size: 1.5rem;
 }
-main .project .my_project .project_03 {
+main .project .my_project .btm {
+	display: flex; flex-flow: row nowrap;
+	justify-content: center;
+	text-align: center;
+}
+main .project .my_project .btm .project_03 {
 	width: 250px;
 	border: 1px solid #fff;
 	border-radius: 25px;
 	background: #dfdfdf;
 	padding: 10px 0;
-	margin-top: 15px;
+	margin: 0 50px 15px 0;
 }
-main .project .my_project .project_03 img {}
-main .project .my_project .project_03 .detail {
+main .project .my_project .btm .project_03 img {}
+main .project .my_project .btm .project_03 .detail {
 	padding: 15px;
 }
-main .project .my_project .project_03 .detail h2 {
+main .project .my_project .btm .project_03 .detail h2 {
 	color: #000;
 	font-size: 2rem;
 	padding-bottom: 10px;
 }
-main .project .my_project .project_03 .detail p {
+main .project .my_project .btm .project_03 .detail p {
 	color: #000;
 	font-size: 1.5rem;
 }
-main .project .my_project .project_04 {
+main .project .my_project .btm .project_04 {
 	width: 250px;
 	border: 1px solid #fff;
 	border-radius: 25px;
 	background: #dfdfdf;
 	padding: 10px 0;
-	margin-top: 15px;
+	margin: 0 0 15px 50px ;
 }
-main .project .my_project .project_04 img {}
-main .project .my_project .project_04 .detail {
+main .project .my_project .btm .project_04 img {}
+main .project .my_project .btm .project_04 .detail {
 	padding: 15px;
 }
-main .project .my_project .project_04 .detail h2 {
+main .project .my_project .btm .project_04 .detail h2 {
 	color: #000;
 	font-size: 2rem;
 	padding-bottom: 10px;
 }
-main .project .my_project .project_04 .detail p {
+main .project .my_project .btm .project_04 .detail p {
 	color: #000;
 	font-size: 1.5rem;
 }
-/* project -------------------------------------------------------------- */
+/* contact -------------------------------------------------------------- */
 main .contact .title {}
 main .contact .title {
 	display: flex; flex-flow: row nowrap;
@@ -310,6 +325,7 @@ main .contact .title {
 main .contact .title h1 {
 	color: #fff;
 	font-size: 2rem;
+	margin-left: 180px;
 }
 main .contact .title span {}
 main .contact .title span::before {
@@ -322,7 +338,7 @@ main .contact .title span::before {
 main .contact_page {
 	border: 3px solid #fff;
 	border-radius: 25px;
-	padding: 50px; margin: 50px 350px;
+	padding: 25px; margin: 50px 350px;
 }
 main .contact .contact_page #contact_detail {}
 main .contact .contact_page #contact_detail fieldset {
@@ -355,6 +371,7 @@ main .contact .contact_page #contact_detail fieldset label #content {
     padding: 15px 16px;
 }
 main .contact .contact_page #contact_detail fieldset #send {
+	margin-top: 20px;
 	padding: 10px 20px;
 	color: #000; font-size: 1.5rem;
 	background: #fff; border-radius: 5px;
