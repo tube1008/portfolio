@@ -1,6 +1,10 @@
 html, body {scroll-behavior: smooth;}
 /* header -------------------------------------------------------------- */
-header {}
+header {
+	max-width:1920px;
+    padding:10px 20px 100px 20px; height:100px;
+    position:sticky; left:50%; top: 0px; width:100%; z-index:900;
+}
 header .menu_wrap {}
 header .menu_wrap .gnb {
 	display: flex; flex-flow: row nowrap;
@@ -215,103 +219,100 @@ main .project .my_project {
 	display: flex; flex-flow: column nowrap;
 	border: 3px solid #fff;
 	border-radius: 25px;
-	padding: 25px; margin: 0 350px 50px 350px;
+	padding: 50px; margin: 0 350px 50px 350px;
 }
-main .project .my_project .top {
+main .project .my_project  {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;text-align: center;
+}
+main .project .my_project  .project_01 {
+	width: 250px;
+	border: 1px solid #fff;
+	border-radius: 25px;
+	background: #dfdfdf;
+	padding: 10px 0;
+}
+main .project .my_project .project_01 img {
+	width: 200px;
+}
+main .project .my_project .project_01 .detail {
+	padding: 15px;
+}
+main .project .my_project .project_01 .detail h2 {
+	color: #000;
+	font-size: 2rem;
+	padding-bottom: 10px;
+}
+main .project .my_project .project_01 .detail p {
+	color: #000;
+	font-size: 1.5rem;
+}
+main .project .my_project .project_02 {
+	width: 250px;
+	border: 1px solid #fff;
+	border-radius: 25px;
+	background: #dfdfdf;
+	padding: 10px 0;
+	margin: 0 30px;
+}
+main .project .my_project .project_02 img {
+	width: 200px;
+}
+main .project .my_project .project_02 .detail {
+	padding: 15px;
+}
+main .project .my_project .project_02 .detail h2 {
+	color: #000;
+	font-size: 2rem;
+	padding-bottom: 10px;
+}
+main .project .my_project .project_02 .detail p {
+	color: #000;
+	font-size: 1.5rem;
+}
+main .project .my_project  {
 	display: flex; flex-flow: row nowrap;
 	justify-content: center;
 	text-align: center;
 }
-main .project .my_project .top .project_01 {
+main .project .my_project .project_03 {
 	width: 250px;
 	border: 1px solid #fff;
 	border-radius: 25px;
 	background: #dfdfdf;
 	padding: 10px 0;
-	margin: 0 50px 15px 0;
+	margin-right: 30px;
 }
-main .project .my_project .top .project_01 img {
-	width: 200px;
-}
-main .project .my_project .top .project_01 .detail {
+main .project .my_project .project_03 img {}
+main .project .my_project .project_03 .detail {
 	padding: 15px;
 }
-main .project .my_project .top .project_01 .detail h2 {
+main .project .my_project .project_03 .detail h2 {
 	color: #000;
 	font-size: 2rem;
 	padding-bottom: 10px;
 }
-main .project .my_project .top .project_01 .detail p {
+main .project .my_project .project_03 .detail p {
 	color: #000;
 	font-size: 1.5rem;
 }
-main .project .my_project .top .project_02 {
+main .project .my_project .project_04 {
 	width: 250px;
 	border: 1px solid #fff;
 	border-radius: 25px;
 	background: #dfdfdf;
 	padding: 10px 0;
-	margin: 0 0 15px 50px ;
 }
-main .project .my_project .top .project_02 img {
-	width: 200px;
-}
-main .project .my_project .top .project_02 .detail {
+main .project .my_project .project_04 img {}
+main .project .my_project .project_04 .detail {
 	padding: 15px;
 }
-main .project .my_project .top .project_02 .detail h2 {
+main .project .my_project .project_04 .detail h2 {
 	color: #000;
 	font-size: 2rem;
 	padding-bottom: 10px;
 }
-main .project .my_project .top .project_02 .detail p {
-	color: #000;
-	font-size: 1.5rem;
-}
-main .project .my_project .btm {
-	display: flex; flex-flow: row nowrap;
-	justify-content: center;
-	text-align: center;
-}
-main .project .my_project .btm .project_03 {
-	width: 250px;
-	border: 1px solid #fff;
-	border-radius: 25px;
-	background: #dfdfdf;
-	padding: 10px 0;
-	margin: 0 50px 15px 0;
-}
-main .project .my_project .btm .project_03 img {}
-main .project .my_project .btm .project_03 .detail {
-	padding: 15px;
-}
-main .project .my_project .btm .project_03 .detail h2 {
-	color: #000;
-	font-size: 2rem;
-	padding-bottom: 10px;
-}
-main .project .my_project .btm .project_03 .detail p {
-	color: #000;
-	font-size: 1.5rem;
-}
-main .project .my_project .btm .project_04 {
-	width: 250px;
-	border: 1px solid #fff;
-	border-radius: 25px;
-	background: #dfdfdf;
-	padding: 10px 0;
-	margin: 0 0 15px 50px ;
-}
-main .project .my_project .btm .project_04 img {}
-main .project .my_project .btm .project_04 .detail {
-	padding: 15px;
-}
-main .project .my_project .btm .project_04 .detail h2 {
-	color: #000;
-	font-size: 2rem;
-	padding-bottom: 10px;
-}
-main .project .my_project .btm .project_04 .detail p {
+main .project .my_project .project_04 .detail p {
 	color: #000;
 	font-size: 1.5rem;
 }
