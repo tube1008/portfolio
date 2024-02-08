@@ -181,6 +181,19 @@
                             <button type="button" id="send">send</button>
                         </fieldset>
                     </form>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="90144b19-74f3-4945-9118-f0e1c810c11c">
+                    
+                        <input type="text" name="name" required>
+                        <input type="email" name="email" required>
+                        <textarea name="message" required></textarea>
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <button type="submit" background-color="white">Submit Form</button>
+                    
+                    </form>
+                    
+                    <script src="https://web3forms.com/client/script.js" async defer></script>
                 </div>
                 <p>2024© AHNILHYUK .All Rights Reserved</p>
         </section>
