@@ -331,7 +331,7 @@ main .contact .title h1 {
 main .contact .title span {}
 main .contact .title span::before {
 	content: ''; display: inline-block;
-    width: 1000px ; height: 3px;
+    width: 1070px ; height: 3px;
     background: #fff;
 	margin-left: 10px;
 	position: relative; top: 16px;

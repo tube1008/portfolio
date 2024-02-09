@@ -159,36 +159,26 @@
                 <span></span>
             </div>
             <div class="contact_page">
-                <form action="#" method="get" id="contact_detail">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact_detail">
+                    <input type="hidden" name="access_key" value="90144b19-74f3-4945-9118-f0e1c810c11c">
                     <fieldset>
                         <legend class="skip">콘택트 양식</legend>
                             <label for="name">
                                 <span>Name</span>
-                                <input type="text" name="name" id="name">
+                                <input type="text" name="name" id="name" required>
                             </label>
                             <label for="email">
                                 <span>E-mail</span>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" required>
                             </label>
                             <label for="content">
                                 <span>Message</span>
-                                <textarea name="content" id="content" placeholder="피드백도 좋아요."></textarea>
+                                <textarea name="message" id="content" placeholder="피드백도 좋아요." required></textarea>
                             </label>
-                            <button type="button" id="send">SEND</button>
+                            <div class="h-captcha" data-captcha="true"></div>
+                            <button type="submit" id="send">Submit Form</button>
                         </fieldset>
                     </form>
-                    <form action="https://api.web3forms.com/submit" method="POST">
-
-                        <input type="hidden" name="access_key" value="90144b19-74f3-4945-9118-f0e1c810c11c">
-                    
-                        <input type="text" name="name" required>
-                        <input type="email" name="email" required>
-                        <textarea name="message" required></textarea>
-                        <div class="h-captcha" data-captcha="true"></div>
-                        <button type="submit" background-color="white">Submit Form</button>
-                    
-                    </form>
-                    
                     <script src="https://web3forms.com/client/script.js" async defer></script>
                 </div>
                 <p>2024© AHNILHYUK .All Rights Reserved</p>
