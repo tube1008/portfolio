@@ -4,6 +4,7 @@ header {
 	max-width:1920px;
     padding:10px 20px 100px 20px; height:100px;
     position:sticky; left:50%; top: 0px; width:100%; z-index:900;
+	background: rgba(0, 0, 0, 0.5);
 }
 header .menu_wrap {}
 header .menu_wrap .gnb {
@@ -303,7 +304,9 @@ main .project .my_project .project_04 {
 	background: #dfdfdf;
 	padding: 10px 0;
 }
-main .project .my_project .project_04 img {}
+main .project .my_project .project_04 img {
+	
+}
 main .project .my_project .project_04 .detail {
 	padding: 15px;
 }

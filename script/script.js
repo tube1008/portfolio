@@ -9,7 +9,7 @@ function typing(){
       if (txtIdx > content.length) {
           txtIdx = 0;
       }else{
-        setTimeout(typing, 100)
+        setTimeout(typing, 80)
       }
 }
 typing();
