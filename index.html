@@ -15,8 +15,8 @@
     <header>
         <div class="menu_wrap">
             <ul class="gnb">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
                 <li><a href="#">SKILLS</a></li>
                 <li><a href="#">PROJECT</a></li>
                 <li><a href="#">CONTACT</a></li>
@@ -27,6 +27,12 @@
         <section class="home">
             <div id="box">
                     <span class="text"></span>
+            </div>
+            <div id="balls">
+                <span class="ball1"></span>
+                <span class="ball2"></span>
+                <span class="ball3"></span>
+                <span class="ball4"></span>
             </div>
         </section>
         <section class="about">
@@ -59,12 +65,11 @@
             </div>
         </section>
         <section class="skill">
+            <div class="title">
+                <h1 class="on2">skills</h1>
+            </div>
             <div class="skillBox">
-                <div class="title">
-                    <h1 class="on2">skills</h1>
-                    <span></span>
-                </div>
-                <div class="skills"> 
+                <div id="skills"> 
                     <p class="item item1">
                         <img src="./skillicon/skill_icon/html_2.png" alt="">
                         <span>시멘틱태그를 잘 이해하고 있습니다.</span>
@@ -81,40 +86,109 @@
                         <img src="./skillicon/skill_icon/gpt2.webp" alt="">
                         <span>사용해 본적 있습니다.</span>
                     </p>
-                    <p class="item item4">
+                    <p class="item item5">
                         <img src="./skillicon/skill_icon/sass1.png" alt="">
                         <span>사용해 본적 있습니다.</span>
                     </p>
-                    <p class="item item4">
+                    <p class="item item6">
                         <img src="./skillicon/skill_icon/php.png" alt="">
                         <span>사용해 본적 있습니다.</span>
                     </p>
-                    <p class="item item4">
+                    <p class="item item7">
                         <img src="./skillicon/skill_icon/react.svg" alt="">
                         <span>사용해 본적 있습니다.</span>
                     </p>
-                    <p class="item item5">
+                    <p class="item item8">
                         <img src="./skillicon/skill_icon/ph1.png" alt="">
                         <span>능숙하게 사용 가능합니다.</span>
                     </p>
-                    <p class="item item6">
+                    <p class="item item9">
                         <img src="./skillicon/skill_icon/illustrator.png" alt="">
                         <span>캐릭터, 배경등 여러가지 일러스트 디자인 가능합니다.</span>
                     </p>
-                    <p class="item item7">
+                    <p class="item item10">
                         <img src="./skillicon/skill_icon/figma1.png" alt="">
                         <span>프로토타입을 만들어 봤습니다</span>
                     </p>
-                    <p class="item item8">
+                    <p class="item item11">
                         <img src="./skillicon/skill_icon/github1.png" alt="">
                         <span>사용함에 있어 불편함이 없습니다.</span>
                     </p>
-                    <p class="item item9">
+                    <p class="item item12">
                         <img src="./skillicon/skill_icon/notion1.png" alt="">
                         <span>사용함에 있어 불편함이 없습니다.</span>
                     </p>
                 </div>
             </div>
+        </section>
+        <section class="project">
+            <div class="title">
+                <h1 class="on3">project</h1>
+                <span></span>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper my_project">
+                    <a href="#" class="swiper-slide project_01">
+                        <img src="./images/bluebottle.png" alt="SleepingBottle">
+                        <div class="detail">
+                            <h2>CloneCoding</h2>
+                            <p>SleepingBottle</p>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide project_02" >
+                        <img src="./images/Group 125.png" alt="오내옷앱로고">
+                        <div class="detail">
+                            <h2>TeamProject</h2>
+                            <p>오늘 내가 입어야 할 옷은?(오내옷)</p>
+                        </div>
+                    </a>
+                    <a href="#" class="swiper-slide project_03">
+                        <img src="" alt="">
+                        <div class="detail">
+                            <h2>Soloproject</h2>
+                            <p>class</p>
+                        </div>
+                    </a>
+                    <a href="https://yunaweb.pe.kr/yeogi_frontend24/" class="swiper-slide project_04">
+                        <img src="./images/logo.png" alt="여기어때 로고">
+                        <div class="detail">
+                            <h2>TeamProject</h2>
+                            <p>여기어때</p>
+                        </div>
+                    </a>
+                    <a href="https://www.figma.com/proto/fsc1pWbHVKhmVLFIVJRfIf/%EC%97%AC%EA%B8%B0%EC%96%B4%EB%95%8C-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C?page-id=0%3A1&type=design&node-id=1-138&viewport=302%2C1678%2C0.14&t=ngDRl3j0Z3R8gqPl-1&scaling=contain&mode=design">기획서</a>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="title">
+                <h1 class="on4">Contact</h1>
+                <span></span>
+            </div>
+            <div class="contact_page">
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact_detail">
+                    <input type="hidden" name="access_key" value="90144b19-74f3-4945-9118-f0e1c810c11c">
+                    <fieldset>
+                        <legend class="skip">콘택트 양식</legend>
+                            <label for="name">
+                                <span>Name</span>
+                                <input type="text" name="name" id="name" required>
+                            </label>
+                            <label for="email">
+                                <span>E-mail</span>
+                                <input type="email" name="email" id="email" required>
+                            </label>
+                            <label for="content">
+                                <span>Message</span>
+                                <textarea name="message" id="content" placeholder="피드백도 좋아요." required></textarea>
+                            </label>
+                            <div class="h-captcha" data-captcha="true"></div>
+                            <button type="submit" id="send">Submit Form</button>
+                        </fieldset>
+                    </form>
+                    <script src="https://web3forms.com/client/script.js" async defer></script>
+                </div>
+                <p>2024© AHNILHYUK .All Rights Reserved</p>
         </section>
     </main>
     <script src="./script/script.js"></script>

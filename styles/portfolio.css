@@ -1,5 +1,4 @@
 body {
-	background: #94D2AE;
 	background: #FCF6F5;
 	scroll-behavior: smooth;
 }
@@ -17,7 +16,7 @@ header .menu_wrap .gnb {
 }
 header .menu_wrap .gnb li {}
 header .menu_wrap .gnb li a {
-	color: #FCF6F5; font-weight: 600;
+	color: #fff; font-weight: 600;
 	font-size: 1.5rem; letter-spacing: 1.5px;
 	padding: 10px;
 	margin-right: 20px;
@@ -32,12 +31,13 @@ header .menu_wrap .gnb li > a {
 	--hover: #fff;
 	border-radius: 1px;
 }
+/* home */
 main {}
-main .home {position: relative;}
-main .home #box {
+main .home {
 	height: 100vh;
-	padding: 30px;
+	position: relative;
 }
+main .home #box {}
 main .home #box .text{
 	width: 55%;
 	color: #2BAE66 ;
@@ -47,26 +47,168 @@ main .home #box .text{
 	position: absolute; left: 25%; top: 40%;
 	font-family: main, sans-serif;
 }
+main .home #balls .ball1 {
+	opacity: 50%;
+	width: 350px; height: 350px;
+	background: #94D2AE;
+	border-radius: 50%;
+	position: absolute; right: 60px; bottom: 170px;
+	box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.3);
+	animation:ball1 3s linear infinite alternate;
+}
+main .home #balls .ball2 {
+	opacity: 50%;
+	width: 250px; height: 250px;
+	background: #FCF6F5;
+	border-radius: 50%;
+	position: absolute; right: 250px; bottom: 70px;
+	box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.3);
+	animation:ball2 3s linear infinite alternate-reverse;
+}
+main .home #balls .ball3 {
+	opacity: 50%;
+	width: 250px; height: 250px;
+	background: #94D2AE;
+	border-radius: 50%;
+	position: absolute; left: 200px; top: 120px;
+	box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.3);
+	animation:ball2 3s linear infinite alternate-reverse;
+}
+main .home #balls .ball4 {
+	opacity: 50%;
+	width: 350px; height: 350px;
+	background: #FCF6F5;
+	border-radius: 50%;
+	position: absolute; left: 60px; top: 170px;
+	box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.3);
+	animation:ball1 3s linear infinite alternate;
+}
 /* about */
-
+main .about {
+	height: 100vh;
+	position: relative;
+}
+main .about .title {
+	padding: 30px 0 5px 0;
+	position: relative; left: 12%; top: 103px;
+}
+main .about .title .on1 {
+	font-size: 2.5rem; font-weight: 600;
+	color: #FCF6F5;
+	background: #2BAE66;
+	display: inline-block;
+	padding: 5px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	opacity: 70%;
+}
+main .about .aboutBox {
+	width: 80%;
+	background: #2BAE66;
+	border-radius: 25px;
+	padding: 36px;
+	position: absolute; left: 10%; top: 20%;
+	display: flex; justify-content: space-between;
+	align-items: center;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .about .aboutBox .detailPage {
+	display: flex; align-items: center;
+}
+main .about .aboutBox .detailPage .photo {
+	margin-right: 50px;
+	width: 270px; height: auto;
+	border: 3px solid #FCF6F5;
+	border-radius: 15px;
+}
+main .about .aboutBox .detailPage .photo img {
+	width: 100%;
+}
+main .about .aboutBox .detailPage .text {}
+main .about .aboutBox .detailPage .text p {
+	font-size: 1.25rem; font-weight: 600;
+	color: #FCF6F5;
+	line-height: 2.5;
+	letter-spacing: 1px;
+}
+main .about .aboutBox .detailPage .text p span {
+	font-size: 1.25rem;
+	color: #FCF6F5;
+	padding-left: 10px;
+}
+main .about .aboutBox .experience {}
+main .about .aboutBox .experience .education {}
+main .about .aboutBox .experience .education h2 {
+	font-size: 1.25rem; font-weight: 600;
+	color: #FCF6F5;
+	padding-bottom: 15px;
+	letter-spacing: 2px;
+}
+main .about .aboutBox .experience .education p {
+	font-size: 1.25rem;
+	color: #FCF6F5;
+	line-height: 2;
+}
+main .about .aboutBox .experience .certificare {}
+main .about .aboutBox .experience .certificare h2 {
+	font-size: 1.25rem; font-weight: 600;
+	color: #FCF6F5;
+	padding: 15px 0;
+	letter-spacing: 2px;
+}
+main .about .aboutBox .experience .certificare p {
+	font-size: 1.25rem;
+	color: #FCF6F5;
+}
 /* skills */
 main .skill {
 	height: 100vh;
 	position: relative;
 }
-main .skill .skillBox .title {
-	position: absolute; left: 25%; top: 10%;
-	width: 1000px;
+main .skill .title {
+	padding: 30px 0 5px 0;
+	position: relative; left: 12%; top: 103px;
+}
+main .skill .title .on2 {
+	font-size: 2.5rem; font-weight: 600;
+	color: #FCF6F5;
 	background: #2BAE66;
-	border-radius: 50px;
-	padding: 50px;
+	display: inline-block;
+	padding: 5px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	opacity: 70%;
 }
-main .skill .skillBox .title .on2 {}
-main .skill .skillBox .skills .item {}
-main .skill .skillBox .skills .item img {
-	width: 50px;
+main .skill .skillBox {
+	width: 80%;
+	background: #2BAE66;
+	border-radius: 25px;
+	padding: 36px;
+	position: absolute; left: 10%; top: 20%;
+	display: flex; justify-content: space-between;
+	align-items: center;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
 }
-main .skill .skillBox .skills .item span {}
+main .skill .skillBox #skills {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items in each row */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    gap: 20px;
+}
+main .skill .skillBox #skills .item {
+	padding: 20px;
+	text-align: center;
+	display: flex; flex-flow: column nowrap;
+}
+main .skill .skillBox #skills .item img {
+	max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+main .skill .skillBox #skills .item span {
+	font-size: 1rem;
+	color: #FCF6F5;
+}
 
 @keyframes typing {
 	from {
@@ -78,4 +220,14 @@ main .skill .skillBox .skills .item span {}
 	50% {
 		border-color: transparent
 	}
+}
+
+@keyframes ball1 {
+	0% {transform:translatey(0)}
+    100% {transform:translatey(80px)}
+}
+
+@keyframes ball2 {
+	0% {transform:translatex(0) translatey(0)}
+    100% {transform:translatex(30px) translatey(30px)}
 }
