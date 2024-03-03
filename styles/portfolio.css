@@ -91,6 +91,7 @@ main .about {
 main .about .title {
 	padding: 30px 0 5px 0;
 	position: relative; left: 12%; top: 103px;
+	animation:aboutme 1s ;
 }
 main .about .title .on1 {
 	font-size: 2.5rem; font-weight: 600;
@@ -168,6 +169,7 @@ main .skill {
 main .skill .title {
 	padding: 30px 0 5px 0;
 	position: relative; left: 12%; top: 103px;
+	animation: aboutme 1s;
 }
 main .skill .title .on2 {
 	font-size: 2.5rem; font-weight: 600;
@@ -183,22 +185,20 @@ main .skill .skillBox {
 	width: 80%;
 	background: #2BAE66;
 	border-radius: 25px;
-	padding: 36px;
+	padding: 30px;
 	position: absolute; left: 10%; top: 20%;
-	display: flex; justify-content: space-between;
-	align-items: center;
+	display: flex; justify-content: center;
 	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
 }
 main .skill .skillBox #skills {
 	display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 items in each row */
-    grid-template-rows: repeat(3, auto); /* 3 rows */
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: repeat(2, auto); 
     gap: 20px;
 }
 main .skill .skillBox #skills .item {
-	padding: 20px;
-	text-align: center;
-	display: flex; flex-flow: column nowrap;
+	padding: 50px;
+	position: relative;
 }
 main .skill .skillBox #skills .item img {
 	max-width: 100px;
@@ -206,8 +206,20 @@ main .skill .skillBox #skills .item img {
     margin-bottom: 10px;
 }
 main .skill .skillBox #skills .item span {
-	font-size: 1rem;
-	color: #FCF6F5;
+	font-size: 1.25rem; font-weight: 600;
+	color: #2BAE66;
+	padding: 20px;
+	width: 250px; height: 150px;
+	background: #FCF6F5;
+	border-radius: 10px;
+	display: flex; align-items: center;
+	text-align: center;
+	position: absolute; left: -20px; top: 30px;
+	opacity: 0;
+}
+main .skill .skillBox #skills .item span:hover {
+	opacity: 1;
+	transition: 1s;
 }
 
 @keyframes typing {
@@ -230,4 +242,9 @@ main .skill .skillBox #skills .item span {
 @keyframes ball2 {
 	0% {transform:translatex(0) translatey(0)}
     100% {transform:translatex(30px) translatey(30px)}
+}
+
+@keyframes aboutme {
+	0% {transform:translatey(100px)}
+    100% {transform:translatey(0px)}
 }
