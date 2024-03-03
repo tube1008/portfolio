@@ -5,11 +5,17 @@
     <meta name="description" content="2024년 프론트엔드 신입 안일혁 포트폴리오입니다.">
     <meta name="keywords" content="프론트엔드,frontendm,html,css,javascript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 안일혁 포트폴리오</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/portfolio.css">
-
-    <title>2024 안일혁 포트폴리오</title>
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -41,9 +47,9 @@
             </div>
             <div class="aboutBox">
                 <div class="detailPage">
-                    <div class="photo">
+                    <p class="photo">
                         <img src="./images/me.jpg" alt="myphoto">
-                    </div>
+                    </p>
                     <div class="text">
                         <p>NAME<span>안 일 혁</span></p>                            
                         <p>BIRTH<span>91. 05. 04</span></p>
@@ -66,7 +72,7 @@
         </section>
         <section class="skill">
             <div class="title">
-                <h1 class="on2">skills</h1>
+                <h1 class="on2">Skills</h1>
             </div>
             <div class="skillBox">
                 <div id="skills"> 
@@ -123,46 +129,85 @@
         </section>
         <section class="project">
             <div class="title">
-                <h1 class="on3">project</h1>
+                <h1 class="on3">Project</h1>
             </div>
-            <div class="swiper-container">
+            <div class="swiper-container" id="projectContainer">
                 <div class="swiper-wrapper my_project">
-                    <a href="#" class="swiper-slide project_01">
-                        <img src="./images/bluebottle.png" alt="SleepingBottle">
-                        <div class="detail">
-                            <h2>CloneCoding</h2>
-                            <p>SleepingBottle</p>
+                    <div class="swiper-slide project_01">
+                        <div class="page">
+                            <p class="icon"><img src="./images/bluebottle.png" alt="SleepingBottle"></p>
+                            <div class="detail">
+                                <h2>개인 프로젝트</h2>
+                                <p>SleepingBottle</p>
+                                <div class="skill">
+                                    <p>#html5</p>
+                                    <p>#css3</p>
+                                    <p>#javascript</p>
+                                    <p>#github</p>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="#" class="swiper-slide project_02" >
-                        <img src="./images/Group 125.png" alt="오내옷앱로고">
-                        <div class="detail">
-                            <h2>TeamProject</h2>
-                            <p>오늘 내가 입어야 할 옷은?(오내옷)</p>
+                        <a href="#" class="mainpage"><img src="./images/sleepingbottle.png" alt="SleepingBottle"><span class="bg"><span>보러가기</span></span></a>
+                    </div>
+                    <div class="swiper-slide project_02">
+                        <div class="page">
+                            <p class="icon"><img src="./images/Group 125.png" alt="오내옷앱로고"></p>
+                            <div class="detail">
+                                <h2>TeamProject</h2>
+                                <p>오늘 내가 입어야 할 옷은?(오내옷)</p>
+                                <div class="skill">
+                                    <p>#Figma</p>
+                                    <p>#photoshop</p>
+                                    <p>#illustration</p>
+                                    <p>#notion</p>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="#" class="swiper-slide project_03">
-                        <img src="" alt="">
-                        <div class="detail">
-                            <h2>Soloproject</h2>
-                            <p>class</p>
+                        <a href="https://www.figma.com/proto/3aGwgB1xKW1LdDqqkKnfqc/ppt?page-id=0%3A1&type=design&node-id=55-927&viewport=499%2C251%2C0.03&t=keE80gHVOVF37sSH-1&scaling=contain&mode=design" class="mainpage"><img src="./images/오내옷 작업.png" alt="SleepingBottle"><span class="bg"><span>보러가기</span></span></a>
+                    </div>
+                    <div class="swiper-slide project_03">
+                        <div class="page">
+                            <p class="icon"><img src="./images/logo.png" alt="여기어때로고"></p>
+                            <div class="detail">
+                                <h2>TeamProject</h2>
+                                <p>여기어때</p>
+                                <a href="https://www.figma.com/proto/fsc1pWbHVKhmVLFIVJRfIf/%EC%97%AC%EA%B8%B0%EC%96%B4%EB%95%8C-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C?page-id=0%3A1&type=design&node-id=1-138&viewport=302%2C1678%2C0.14&t=ngDRl3j0Z3R8gqPl-1&scaling=contain&mode=design" class="plan">+기획서</a>
+                                <div class="skill">
+                                    <p>#html5</p>
+                                    <p>#css3</p>
+                                    <p>#javascript</p>
+                                    <p>#sass</p>
+                                    <p>#php</p>
+                                    <p>#github</p>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://yunaweb.pe.kr/yeogi_frontend24/" class="swiper-slide project_04">
-                        <img src="./images/logo.png" alt="여기어때 로고">
-                        <div class="detail">
-                            <h2>TeamProject</h2>
-                            <p>여기어때</p>
+                        <a href="https://yunaweb.pe.kr/yeogi_frontend24/" class="mainpage"><img src="./images/yeo.png" alt="SleepingBottle"><span class="bg"><span>보러가기</span></span></a>
+                    </div>
+                    <div class="swiper-slide project_04">
+                        <div class="page">
+                            <p class="icon"><img src="#" alt=""></p>
+                            <div class="detail">
+                                <h2>무엇을 넣으면 좋을까요?</h2>
+                                <p>알아맞춰보세요!</p>
+                                <div class="skill">
+                                    <p>#딩동댕</p>
+                                    <p>#하하하</p>
+                                    <p>#호호호</p>
+                                    <p>#히히히</p>
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="https://www.figma.com/proto/fsc1pWbHVKhmVLFIVJRfIf/%EC%97%AC%EA%B8%B0%EC%96%B4%EB%95%8C-%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C?page-id=0%3A1&type=design&node-id=1-138&viewport=302%2C1678%2C0.14&t=ngDRl3j0Z3R8gqPl-1&scaling=contain&mode=design">기획서</a>
+                        <a href="#" class="mainpage"><img src="" alt=""><span class="bg"><span>보러가기</span></span></a>
+                    </div>
                 </div>
             </div>
+            <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left" style="color: #2BAE66;"></i></div>
+            <div class="swiper-button-next"><i class="fa-solid fa-chevron-right" style="color: #2BAE66;"></i></div>
         </section>
         <section class="contact">
             <div class="title">
                 <h1 class="on4">Contact</h1>
-                <span></span>
             </div>
             <div class="contact_page">
                 <form action="https://api.web3forms.com/submit" method="POST" id="contact_detail">
@@ -181,15 +226,16 @@
                                 <span>Message</span>
                                 <textarea name="message" id="content" placeholder="피드백도 좋아요." required></textarea>
                             </label>
-                            <div class="h-captcha" data-captcha="true"></div>
+                            <!-- <div class="h-captcha" data-captcha="true"></div> -->
                             <button type="submit" id="send">Submit Form</button>
-                        </fieldset>
-                    </form>
-                    <script src="https://web3forms.com/client/script.js" async defer></script>
-                </div>
-                <p>2024© AHNILHYUK .All Rights Reserved</p>
+                    </fieldset>
+                </form>
+                <script src="https://web3forms.com/client/script.js" async defer></script>
+            </div>
+            <p>2024© AHNILHYUK .All Rights Reserved</p>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
     <script src="./script/script.js"></script>
 </body>
 </html>

@@ -11,8 +11,7 @@ header .menu_wrap .gnb {
 	padding: 30px;
 	position: fixed;
     left: 0; top: 0; z-index: 900;
-	background: #2BAE66;
-	opacity: 70%;
+	background: rgba(43, 174, 102, 0.7);
 }
 header .menu_wrap .gnb li {}
 header .menu_wrap .gnb li a {
@@ -39,7 +38,7 @@ main .home {
 }
 main .home #box {}
 main .home #box .text{
-	width: 55%;
+	width: 50%;
 	color: #2BAE66 ;
 	font-size: 3rem;
 	line-height: 2;
@@ -90,7 +89,7 @@ main .about {
 }
 main .about .title {
 	padding: 30px 0 5px 0;
-	position: relative; left: 12%; top: 103px;
+	position: relative; left: 12%; top: 150px;
 	animation:aboutme 1s ;
 }
 main .about .title .on1 {
@@ -108,7 +107,7 @@ main .about .aboutBox {
 	background: #2BAE66;
 	border-radius: 25px;
 	padding: 36px;
-	position: absolute; left: 10%; top: 20%;
+	position: absolute; left: 10%; top: 25%;
 	display: flex; justify-content: space-between;
 	align-items: center;
 	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
@@ -118,12 +117,13 @@ main .about .aboutBox .detailPage {
 }
 main .about .aboutBox .detailPage .photo {
 	margin-right: 50px;
-	width: 270px; height: auto;
-	border: 3px solid #FCF6F5;
+	width: 270px; height: 360px;
+	border: 1px solid #FCF6F5;
 	border-radius: 15px;
 }
 main .about .aboutBox .detailPage .photo img {
 	width: 100%;
+	border-radius: 15px;
 }
 main .about .aboutBox .detailPage .text {}
 main .about .aboutBox .detailPage .text p {
@@ -221,6 +221,414 @@ main .skill .skillBox #skills .item span:hover {
 	opacity: 1;
 	transition: 1s;
 }
+/* project */
+main .project {
+	height: 100vh;
+	position: relative;
+}
+main .project .title {
+	text-align: center;
+	background: #94D2AE;
+	padding: 20px 0;
+}
+main .project .title .on3 {
+	font-size: 2.5rem; font-weight: 600;
+	color: #FCF6F5;
+	letter-spacing: 1.5px;
+}
+main .project #projectContainer {
+	max-width: 1903px; height: 80%;
+	padding: 50px;
+	position: absolute; 
+}
+main .project #projectContainer .my_project {}
+main .project #projectContainer .my_project .project_01 {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center; 
+	background: #2BAE66;
+	border-radius: 20px;
+	padding: 50px 90px;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_01 .page {
+	width: 500px;
+	padding: 15px;
+	border-radius: 15px;
+	background: #FCF6F5;
+	text-align: center;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_01 .page .icon {
+	width: 200px; height: 210px; margin: 0 auto;
+}
+main .project #projectContainer .my_project .project_01 .page img {
+	width: 200px;
+}
+main .project #projectContainer .my_project .project_01 .page .detail {
+}
+main .project #projectContainer .my_project .project_01 .page .detail h2 {
+	font-size: 1.25rem; font-weight: 600;
+	color: #2BAE66;
+	margin: 10px 0;
+	letter-spacing: 1.5px;
+}
+main .project #projectContainer .my_project .project_01 .page .detail p {
+	font-size: 1.25rem; color: #2BAE66;
+	margin: 10px 0;
+}
+main .project #projectContainer .my_project .project_01 .page .detail .skill {
+	height: auto;
+}
+main .project #projectContainer .my_project .project_01 .page .detail .skill p {
+	display: inline-block;
+	color: #000;
+	padding: 8px;
+	margin: 10px 3px;
+	background: #94D2AE;
+	border-radius: 15px;
+	text-align: center;
+}
+main .project #projectContainer .my_project .project_01 .mainpage {
+	position: relative;
+}
+main .project #projectContainer .my_project .project_01 .mainpage img {
+	width: 1024px;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_01 .mainpage:hover .bg {
+	display: block;
+} 
+main .project #projectContainer .my_project .project_01 .mainpage .bg {
+	text-align: center; position: absolute; left: 0; top: 0px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%; height: 99%;
+	display: none;
+}
+main .project #projectContainer .my_project .project_01 .mainpage .bg span {
+	font-size: 2.5rem; color: #fff; width: 100%;
+    position: absolute; left: 0; top: 45%;
+}
+main .project #projectContainer .my_project .project_02 {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center; 
+	background: #2BAE66;
+	border-radius: 20px;
+	padding: 50px 90px;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_02 .page {
+	width: 500px;
+	padding: 15px;
+	border-radius: 15px;
+	background: #FCF6F5;
+	text-align: center;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_02 .page .icon {
+	width: 200px; height: 210px; margin: 0 auto;
+}
+main .project #projectContainer .my_project .project_02 .page img {
+	width: 200px;
+}
+main .project #projectContainer .my_project .project_02 .page .detail {
+}
+main .project #projectContainer .my_project .project_02 .page .detail h2 {
+	font-size: 1.25rem; font-weight: 600;
+	color: #2BAE66;
+	margin: 10px 0;
+	letter-spacing: 1.5px;
+}
+main .project #projectContainer .my_project .project_02 .page .detail p {
+	font-size: 1.25rem; color: #2BAE66;
+	margin: 10px 0;
+}
+main .project #projectContainer .my_project .project_02 .page .detail .skill {
+	height: auto;
+}
+main .project #projectContainer .my_project .project_02 .page .detail .skill p {
+	display: inline-block;
+	color: #000;
+	padding: 8px;
+	margin: 10px 3px;
+	background: #94D2AE;
+	border-radius: 15px;
+	text-align: center;
+}
+main .project #projectContainer .my_project .project_02 .mainpage {
+	position: relative;
+}
+main .project #projectContainer .my_project .project_02 .mainpage img {
+	width: 1024px; height: 500px;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_02 .mainpage:hover .bg {
+	display: block;
+} 
+main .project #projectContainer .my_project .project_02 .mainpage .bg {
+	text-align: center; position: absolute; left: 0; top: 0px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%; height: 99%;
+	display: none;
+}
+main .project #projectContainer .my_project .project_02 .mainpage .bg span {
+	font-size: 2.5rem; color: #fff; width: 100%;
+    position: absolute; left: 0; top: 45%;
+}
+main .project #projectContainer .my_project .project_03 {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center; 
+	background: #2BAE66;
+	border-radius: 20px;
+	padding: 50px 90px;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_03 .page {
+	width: 500px;
+	padding: 15px;
+	border-radius: 15px;
+	background: #fff;
+	text-align: center;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_03 .page .icon {
+	width: 200px; height: 210px; margin: 0 auto;
+	display: flex; align-items: center;
+}
+main .project #projectContainer .my_project .project_03 .page img {
+	width: 200px;
+}
+main .project #projectContainer .my_project .project_03 .page .detail {
+}
+main .project #projectContainer .my_project .project_03 .page .detail h2 {
+	font-size: 1.25rem; font-weight: 600;
+	color: #2BAE66;
+	margin: 10px 0;
+	letter-spacing: 1.5px;
+}
+main .project #projectContainer .my_project .project_03 .page .detail p {
+	font-size: 1.25rem; color: #2BAE66;
+	margin: 10px 0;
+}
+main .project #projectContainer .my_project .project_03 .page .detail .plan {
+	font-size: 2.5rem; color: #fff;
+	background: #f7323f;
+	padding: 5px 15px;
+	border-radius: 15px;
+	position: absolute; z-index: 999;
+	left: 25%; top: 10%;
+	animation: rotate 1s infinite alternate-reverse linear;
+}
+main .project #projectContainer .my_project .project_03 .page .detail .plan:hover {
+	box-shadow: 12px 12px 1px #f8c9cc;
+	transition: 0.5s ease;
+}
+@keyframes rotate {
+	0% {transform: translateY(0px) translateX(0px)}
+	100% {transform: translateY(10px) translateX(10px)}
+}
+
+main .project #projectContainer .my_project .project_03 .page .detail .skill {
+	height: auto;
+}
+main .project #projectContainer .my_project .project_03 .page .detail .skill p {
+	display: inline-block;
+	color: #000;
+	padding: 8px;
+	margin: 10px 3px;
+	background: #94D2AE;
+	border-radius: 15px;
+	text-align: center;
+}
+main .project #projectContainer .my_project .project_03 .mainpage {
+	position: relative;
+}
+main .project #projectContainer .my_project .project_03 .mainpage img {
+	width: 1024px; height: 500px;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_03 .mainpage:hover .bg {
+	display: block;
+} 
+main .project #projectContainer .my_project .project_03 .mainpage .bg {
+	text-align: center; position: absolute; left: 0; top: 0px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%; height: 99%;
+	display: none;
+}
+main .project #projectContainer .my_project .project_03 .mainpage .bg span {
+	font-size: 2.5rem; color: #fff; width: 100%;
+    position: absolute; left: 0; top: 45%;
+}
+main .project #projectContainer .my_project .project_04 {
+	display: flex; flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center; 
+	background: #2BAE66;
+	border-radius: 20px;
+	padding: 50px 90px;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_04 .page {
+	width: 500px;
+	padding: 15px;
+	border-radius: 15px;
+	background: #fff;
+	text-align: center;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_04 .page .icon {
+	width: 200px; height: 210px; margin: 0 auto;
+	display: flex; align-items: center;
+}
+main .project #projectContainer .my_project .project_04 .page img {
+	width: 200px;
+}
+main .project #projectContainer .my_project .project_04 .page .detail {
+}
+main .project #projectContainer .my_project .project_04 .page .detail h2 {
+	font-size: 1.25rem; font-weight: 600;
+	color: #2BAE66;
+	margin: 10px 0;
+	letter-spacing: 1.5px;
+}
+main .project #projectContainer .my_project .project_04 .page .detail p {
+	font-size: 1.25rem; color: #2BAE66;
+	margin: 10px 0;
+}
+main .project #projectContainer .my_project .project_04 .page .detail .skill {
+	height: auto;
+}
+main .project #projectContainer .my_project .project_04 .page .detail .skill p {
+	display: inline-block;
+	color: #000;
+	padding: 8px;
+	margin: 10px 3px;
+	background: #94D2AE;
+	border-radius: 15px;
+	text-align: center;
+}
+main .project #projectContainer .my_project .project_04 .mainpage {
+	position: relative;
+}
+main .project #projectContainer .my_project .project_04 .mainpage img {
+	width: 1024px;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .project #projectContainer .my_project .project_04 .mainpage:hover .bg {
+	display: block;
+} 
+main .project #projectContainer .my_project .project_04 .mainpage .bg {
+	text-align: center; position: absolute; left: 0; top: 0px; 
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%; height: 99%;
+	display: none;
+}
+main .project #projectContainer .my_project .project_04 .mainpage .bg span {
+	font-size: 2.5rem; color: #fff; width: 100%;
+    position: absolute; left: 0; top: 45%;
+}
+.swiper-button-prev::after {display: none;}
+.swiper-button-next::after {display: none;}
+main .project  .swiper-button-next {
+	position: absolute;
+}
+main .project .swiper-button-next i[class*=right] {
+	font-size: 2rem;
+	margin-right: 20px;
+}
+main .project .swiper-button-prev {
+	position: absolute;
+}
+main .project .swiper-button-prev i[class*=left] {
+	font-size: 2rem;
+	margin-left: 20px;
+}
+
+
+/* contact */
+main .contact {
+	height: 100vh;
+	position: relative;
+}
+main .contact .title {
+	padding: 30px 0 5px 0;
+	position: relative; left: 26%; top: 150px;
+	animation: aboutme 1s;
+}
+main .contact .title .on4 {
+	font-size: 2.5rem; font-weight: 600;
+	color: #FCF6F5;
+	background: #2BAE66;
+	display: inline-block;
+	padding: 5px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	opacity: 70%;
+}
+main .contact_page {
+	width: 50%; margin: 0 auto;
+	background: #2BAE66;
+	border-radius: 25px;
+	padding: 30px;
+	position: absolute; left: 24.8%; top: 25%;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
+}
+main .contact .contact_page #contact_detail {
+	display: flex; flex-flow: column nowrap;
+	justify-content: center; 
+}
+main .contact .contact_page #contact_detail fieldset {
+	text-align: center;
+}
+main .contact .contact_page #contact_detail fieldset label {
+	display: flex; flex-flow: column nowrap;
+	justify-content: center;
+	padding: 15px;
+}
+main .contact .contact_page #contact_detail fieldset label span {
+	color: #fff; font-size: 1.5rem;
+	padding-bottom: 10px;
+	text-align: left;
+}
+main .contact .contact_page #contact_detail fieldset label #name {
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+main .contact .contact_page #contact_detail fieldset label #email {
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+main .contact .contact_page #contact_detail fieldset label #content {
+	height: auto;
+	border-radius: 5px;
+	border: none; resize: none;
+    color: #2BAE66; font-weight: 500;
+    border: 1px solid #e5e7eb;
+    padding: 15px 16px;
+}
+main .contact .contact_page #contact_detail fieldset #send {
+	margin-top: 20px;
+	padding: 10px 20px;
+	color: #2BAE66; font-size: 1.5rem;
+	background: #fff; border-radius: 5px;
+}
+main .contact .contact_page #contact_detail fieldset #send:hover {
+	color: #FCF6F5;
+	background: #2BAE66;
+	transition: 0.5s;
+}
+main .contact p {	
+	font-family: 'Dosis', sans-serif;
+	color: #2BAE66; font-size: 0.875rem;
+	padding: 0 50px;
+	letter-spacing: 1.5px;
+	position: absolute; bottom: 0;
+}
+
+
 
 @keyframes typing {
 	from {
@@ -248,3 +656,4 @@ main .skill .skillBox #skills .item span:hover {
 	0% {transform:translatey(100px)}
     100% {transform:translatey(0px)}
 }
+
