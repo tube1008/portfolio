@@ -1,7 +1,6 @@
-body {
-	background: #FCF6F5;
-	scroll-behavior: smooth;
-}
+* {scroll-behavior: smooth;}
+body {background: #FCF6F5;}
+body > * {min-width: 1600px;}
 header {}
 header .menu_wrap {}
 header .menu_wrap .gnb {
@@ -90,7 +89,7 @@ main .about {
 main .about .title {
 	padding: 30px 0 5px 0;
 	position: relative; left: 12%; top: 150px;
-	animation:aboutme 1s ;
+	animation:aboutme 1s;
 }
 main .about .title .on1 {
 	font-size: 2.5rem; font-weight: 600;
@@ -206,7 +205,7 @@ main .skill .skillBox #skills .item img {
     margin-bottom: 10px;
 }
 main .skill .skillBox #skills .item span {
-	font-size: 1.25rem; font-weight: 600;
+	font-size: 1.25rem; 
 	color: #2BAE66;
 	padding: 20px;
 	width: 250px; height: 150px;
@@ -227,19 +226,31 @@ main .project {
 	position: relative;
 }
 main .project .title {
-	text-align: center;
-	background: #94D2AE;
 	padding: 20px 0;
+	
 }
 main .project .title .on3 {
 	font-size: 2.5rem; font-weight: 600;
-	color: #FCF6F5;
 	letter-spacing: 1.5px;
+	border-top: 1px solid #2BAE66;
+    border-bottom: 1px solid #2BAE66;
+    background: url(../images/IlHYUK\ PROJECT\ IlHYUK\ PROJECT.png) repeat-x center;
+    width: 100%;
+    height: 100px;
+    position: absolute; 
+    z-index: 30; top: 10%;
+	animation: bnr 15s infinite linear;
 }
+
+@keyframes bnr {
+	0% {background-position-x:0px;}
+	100% {background-position-x:1000px;}
+}
+
 main .project #projectContainer {
 	max-width: 1903px; height: 80%;
 	padding: 50px;
-	position: absolute; 
+	position: absolute;  top: 17%;
 }
 main .project #projectContainer .my_project {}
 main .project #projectContainer .my_project .project_01 {
@@ -273,6 +284,19 @@ main .project #projectContainer .my_project .project_01 .page .detail h2 {
 	margin: 10px 0;
 	letter-spacing: 1.5px;
 }
+main .project #projectContainer .my_project .project_01 .page .detail h2 span {
+	color: #333;
+}
+main .project #projectContainer .my_project .project_01 .page .detail .git {
+	padding: 5px 10px;
+	font-size: 1.25rem;
+	background: #2BAE66; color: #FCF6F5;
+	border-radius: 15px;
+}
+main .project #projectContainer .my_project .project_01 .page .detail .git:hover {
+	background: #FCF6F5; color: #2BAE66;
+	transition: 0.5s;
+}
 main .project #projectContainer .my_project .project_01 .page .detail p {
 	font-size: 1.25rem; color: #2BAE66;
 	margin: 10px 0;
@@ -282,10 +306,11 @@ main .project #projectContainer .my_project .project_01 .page .detail .skill {
 }
 main .project #projectContainer .my_project .project_01 .page .detail .skill p {
 	display: inline-block;
+	font-size: 1rem;
 	color: #000;
 	padding: 8px;
 	margin: 10px 3px;
-	background: #94D2AE;
+	background: #eee;
 	border-radius: 15px;
 	text-align: center;
 }
@@ -332,8 +357,7 @@ main .project #projectContainer .my_project .project_02 .page .icon {
 main .project #projectContainer .my_project .project_02 .page img {
 	width: 200px;
 }
-main .project #projectContainer .my_project .project_02 .page .detail {
-}
+main .project #projectContainer .my_project .project_02 .page .detail {}
 main .project #projectContainer .my_project .project_02 .page .detail h2 {
 	font-size: 1.25rem; font-weight: 600;
 	color: #2BAE66;
@@ -349,10 +373,11 @@ main .project #projectContainer .my_project .project_02 .page .detail .skill {
 }
 main .project #projectContainer .my_project .project_02 .page .detail .skill p {
 	display: inline-block;
+	font-size: 1rem;
 	color: #000;
 	padding: 8px;
 	margin: 10px 3px;
-	background: #94D2AE;
+	background: #eee;
 	border-radius: 15px;
 	text-align: center;
 }
@@ -408,6 +433,19 @@ main .project #projectContainer .my_project .project_03 .page .detail h2 {
 	margin: 10px 0;
 	letter-spacing: 1.5px;
 }
+main .project #projectContainer .my_project .project_03 .page .detail h2 span {
+	color: #333;
+}
+main .project #projectContainer .my_project .project_03 .page .detail .git {
+	padding: 5px 10px;
+	font-size: 1.25rem;
+	background: #2BAE66; color: #FCF6F5;
+	border-radius: 15px;
+}
+main .project #projectContainer .my_project .project_03 .page .detail .git:hover {
+	background: #FCF6F5; color: #2BAE66;
+	transition: 0.5s;
+}
 main .project #projectContainer .my_project .project_03 .page .detail p {
 	font-size: 1.25rem; color: #2BAE66;
 	margin: 10px 0;
@@ -419,26 +457,54 @@ main .project #projectContainer .my_project .project_03 .page .detail .plan {
 	border-radius: 15px;
 	position: absolute; z-index: 999;
 	left: 25%; top: 10%;
-	animation: rotate 1s infinite alternate-reverse linear;
+	-webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+	animation: pulsate-fwd 0.5s ease-in-out infinite both;
 }
 main .project #projectContainer .my_project .project_03 .page .detail .plan:hover {
 	box-shadow: 12px 12px 1px #f8c9cc;
 	transition: 0.5s ease;
 }
-@keyframes rotate {
-	0% {transform: translateY(0px) translateX(0px)}
-	100% {transform: translateY(10px) translateX(10px)}
+
+@-webkit-keyframes pulsate-fwd {
+	0% {
+	-webkit-transform: scale(1);
+			transform: scale(1);
+	}
+	50% {
+	-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+	}
+	100% {
+	-webkit-transform: scale(1);
+			transform: scale(1);
+	}
 }
+@keyframes pulsate-fwd {
+	0% {
+	-webkit-transform: scale(1);
+			transform: scale(1);
+	}
+	50% {
+	-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+	}
+	100% {
+	-webkit-transform: scale(1);
+			transform: scale(1);
+	}
+}
+
 
 main .project #projectContainer .my_project .project_03 .page .detail .skill {
 	height: auto;
 }
 main .project #projectContainer .my_project .project_03 .page .detail .skill p {
 	display: inline-block;
+	font-size: 1rem;
 	color: #000;
 	padding: 8px;
 	margin: 10px 3px;
-	background: #94D2AE;
+	background: #eee;
 	border-radius: 15px;
 	text-align: center;
 }
@@ -533,21 +599,19 @@ main .project #projectContainer .my_project .project_04 .mainpage .bg span {
 .swiper-button-prev::after {display: none;}
 .swiper-button-next::after {display: none;}
 main .project  .swiper-button-next {
-	position: absolute;
+	position: absolute; top: 57%;
 }
 main .project .swiper-button-next i[class*=right] {
 	font-size: 2rem;
 	margin-right: 20px;
 }
 main .project .swiper-button-prev {
-	position: absolute;
+	position: absolute; top: 57%;
 }
 main .project .swiper-button-prev i[class*=left] {
 	font-size: 2rem;
 	margin-left: 20px;
 }
-
-
 /* contact */
 main .contact {
 	height: 100vh;
@@ -555,7 +619,7 @@ main .contact {
 }
 main .contact .title {
 	padding: 30px 0 5px 0;
-	position: relative; left: 26%; top: 150px;
+	position: relative; left: 9%; top: 21%;
 	animation: aboutme 1s;
 }
 main .contact .title .on4 {
@@ -573,7 +637,7 @@ main .contact_page {
 	background: #2BAE66;
 	border-radius: 25px;
 	padding: 30px;
-	position: absolute; left: 24.8%; top: 25%;
+	position: absolute; left: 8%; top: 30%;
 	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.3);
 }
 main .contact .contact_page #contact_detail {
@@ -628,7 +692,30 @@ main .contact p {
 	position: absolute; bottom: 0;
 }
 
-
+main .contact .qrCode {
+	width: 400px; height: 470px;
+	padding: 36px;
+	background: #2BAE66;
+	position: absolute; right: 10%; top: 30%;
+	border-radius: 15px;
+}
+main .contact .qrCode .qr {
+	display: flex; flex-flow: column nowrap;
+	align-items: center;
+}
+main .contact .qrCode .qr img {
+	width: 200px; position: relative; left: 10px; top: -200px;
+	-webkit-animation: jello-horizontal 0.9s both;
+	animation: jello-horizontal 0.9s both;
+}
+main .contact .qrCode .phone {
+	color: #FCF6F5; font-size: 1.25rem;
+	position: relative; left: 27px; top: 275px;
+}
+main .contact .qrCode .mail {
+	color: #FCF6F5; font-size: 1.25rem;
+	position: relative; left: 10px; top: 320px;
+}
 
 @keyframes typing {
 	from {
@@ -657,3 +744,64 @@ main .contact p {
     100% {transform:translatey(0px)}
 }
 
+@-webkit-keyframes jello-horizontal {
+	0% {
+	  -webkit-transform: scale3d(1, 1, 1);
+			  transform: scale3d(1, 1, 1);
+	}
+	30% {
+	  -webkit-transform: scale3d(1.25, 0.75, 1);
+			  transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+	  -webkit-transform: scale3d(0.75, 1.25, 1);
+			  transform: scale3d(0.75, 1.25, 1);
+	}
+	50% {
+	  -webkit-transform: scale3d(1.15, 0.85, 1);
+			  transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+	  -webkit-transform: scale3d(0.95, 1.05, 1);
+			  transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+	  -webkit-transform: scale3d(1.05, 0.95, 1);
+			  transform: scale3d(1.05, 0.95, 1);
+	}
+	100% {
+	  -webkit-transform: scale3d(1, 1, 1);
+			  transform: scale3d(1, 1, 1);
+	}
+  }
+  @keyframes jello-horizontal {
+	0% {
+	  -webkit-transform: scale3d(1, 1, 1);
+			  transform: scale3d(1, 1, 1);
+	}
+	30% {
+	  -webkit-transform: scale3d(1.25, 0.75, 1);
+			  transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+	  -webkit-transform: scale3d(0.75, 1.25, 1);
+			  transform: scale3d(0.75, 1.25, 1);
+	}
+	50% {
+	  -webkit-transform: scale3d(1.15, 0.85, 1);
+			  transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+	  -webkit-transform: scale3d(0.95, 1.05, 1);
+			  transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+	  -webkit-transform: scale3d(1.05, 0.95, 1);
+			  transform: scale3d(1.05, 0.95, 1);
+	}
+	100% {
+	  -webkit-transform: scale3d(1, 1, 1);
+			  transform: scale3d(1, 1, 1);
+	}
+  }
+  

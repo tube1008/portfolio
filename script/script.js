@@ -16,25 +16,17 @@ typing();
 
 const top_menu = document.querySelectorAll('.gnb li a')
 const title = document.querySelectorAll('main > section')
-console.log(title, top_menu)
+console.log(top_menu, title)
 
 
-top_menu[0].addEventListener('click',()=>{
-  console.log(title[0].offsetTop)
-  console.log(title[1].offsetTop)
-  console.log(title[2].offsetTop)
-  console.log(title[3].offsetTop)
-  console.log(title[4].offsetTop)
-  window.scrollTo(0, title[0].offsetTop)
+top_menu[0].classList.add('active')
+top_menu.forEach((t,i)=>{
+    t.addEventListener('click',(e)=>{
+        e.preventDefault()
+        window.scrollTo(0, title[i].offsetTop)
+    })
 })
-top_menu[1].addEventListener('click',()=>{
-  console.log(title[0].offsetTop)
-  console.log(title[1].offsetTop)
-  console.log(title[2].offsetTop)
-  console.log(title[3].offsetTop)
-  console.log(title[4].offsetTop)
-  window.scrollTo(0, title[1].offsetTop)
-})
+
 
 let swiperContainer =document.querySelector('#projectContainer')
 let swiper = new Swiper('#projectContainer', {
@@ -50,6 +42,7 @@ let swiper = new Swiper('#projectContainer', {
         nextEl: ".swiper-button-next",
     },
 })
+
 
 
 
