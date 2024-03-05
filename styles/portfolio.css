@@ -1,6 +1,7 @@
 * {scroll-behavior: smooth;}
 body {background: #FCF6F5;}
 body > * {min-width: 1600px;}
+body, html {overflow-x: hidden; width: 100%;}
 header {}
 header .menu_wrap {}
 header .menu_wrap .gnb {
