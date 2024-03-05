@@ -2,6 +2,7 @@
     font-family: main;
     src: url(../fonts/MaruBuri-Regular.ttf);
 } */
+body > * {min-width: 1920px;}
 @font-face {
     font-family: main;
     src: url(../fonts/The\ Jamsil\ 3\ Regular.ttf);
